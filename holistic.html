@@ -1,0 +1,53 @@
+<!--
+    MediaPipe Holistic
+    https://google.github.io/mediapipe/solutions/holistic.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" type="text/css" href="holistic.css" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.6/control_utils.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.3/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.6/control_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.3/drawing_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/holistic@0.5/holistic.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <video class="input_video"></video>
+        <div class="canvas-container">
+        <canvas class="output_canvas" width="1280px" height="720px">
+        </canvas>
+        </div>
+        <div class="loading">
+          <div class="spinner"></div>
+          <div class="message">
+            Loading
+          </div>
+        </div>
+        <a class="abs logo" href="http://www.mediapipe.dev" target="_blank">
+          <div style="display: flex;align-items: center;bottom: 0;right: 10px;">
+            <img class="logo" src="./img/logo_white.png" alt="" style="
+              height: 50px;">
+            <span class="title">MediaPipe</span>
+          </div>
+        </a>
+        <div class="shoutout">
+          <div>
+            <a href="https://solutions.mediapipe.dev/holistic" target="_blank">
+              Click here for more info
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="control-panel">
+    </div>
+</body>
+</html>
+
+<script type="module" src="holistic.js"></script>
